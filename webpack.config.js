@@ -58,42 +58,43 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './src/index.html',
+            template: 'src/index.html',
             inject: "body",
             chunks: ['index'],
         }),
         new HtmlWebpackPlugin({
             filename: 'list-Tour.html',
-            template: './src/list-Tour.html',
+            template: 'src/list-Tour.html',
             inject: "body",
             chunks: ['index'],
         }),
         new HtmlWebpackPlugin({
             filename: 'tour-Detail.html',
-            template: './src/tour-Detail.html',
+            template: 'src/tour-Detail.html',
             inject: "body",
             chunks: ['index'],
         }),
         new HtmlWebpackPlugin({
             filename: 'news.html',
-            template: './src/news.html',
+            template: 'src/news.html',
             inject: "body",
             chunks: ['index'],
         }),
         new HtmlWebpackPlugin({
             filename: 'news-Detail.html',
-            template: './src/news-Detail.html',
+            template: 'src/news-Detail.html',
             inject: "body",
             chunks: ['index'],
         }),
         new HtmlWebpackPlugin({
             filename: 'contact.html',
-            template: './src/contact.html',
+            template: 'src/contact.html',
             inject: "body",
             chunks: ['index'],
         }),
         // new BaseHrefWebpackPlugin({ baseHref: '/' }),
         new MiniCssExtractPlugin({
+
             filename: "css/[name].min.css",
           }),
     ],
