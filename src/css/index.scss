@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../fonts/font-icon/style.css';
+@import '../fonts/VampiroOne/style.css';
+@import '../fonts/prata/style.css';
+@import './backTop.scss';
+@import './nav.scss';
+
+@mixin md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin animate($animation, $duration, $method, $times) {
+    animation: $animation $duration $method $times;
+}
+
+@mixin transition($name, $duration, $delay, $ease) {
+    transition: {
+        property: $name;
+        duration: $duration ;
+        delay: $delay;
+        timing-function: $ease;
+    }
+}
+
+#triangle {
+    bottom: -10px;
+    left: 25%;
+    transform: translate(0%);
+    width: 75%;
+    height: 22px;
+    background-color: #F59E0B;
+    clip-path: polygon(100% 100%, 0 0, 100% 0);
+}
+
+#bigTriangle {
+    bottom: -19px;
+    /* left: 25%; */
+    transform: translate(0%);
+    width: 49%;
+    height: 30px;
+    background-color: #F59E0B;
+    -webkit-clip-path: polygon(100% 100%, 0 0, 100% 0);
+    clip-path: polygon(100% 100%, 0 0, 100% 0);
+    right: 0px;
+}
+
+select {
+    width: 268px;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1;
+    border: 1;
+    border-radius: 5px;
+    height: 48px;
+    background: url("/src/img/main/chevron-down.svg") no-repeat right #fff;
+    -webkit-appearance: none;
+    background-position-x: 95%;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 33px;
+    height: 20px;
+    background: #0051CD;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+#comment {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    width: 68px;
+    font-size: 16px;
+    height: 36px;
+    background: url("/src/img/main/calendar.svg") no-repeat right #fff;
+    -webkit-appearance: none;
+}

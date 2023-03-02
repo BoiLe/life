@@ -1,0 +1,236 @@
+.navbar-nav {
+    width: 100%;
+    top: 95px;
+    left: 0;
+    box-shadow: -1px 0px 1px #575656;
+    position: fixed;
+    background-color: rgba(77, 74, 74, 0.89);
+    transition: all 0.3s ease-in-out;
+
+    @media only screen and (max-width: 767px) {
+        .navbar {
+            height: 0;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            column-gap: 40px;
+            overflow: hidden;
+            transition: all 1s ease-in-out;
+
+            .pamenu {
+                margin-top: 50px;
+                padding: 0;
+                list-style: none;
+                height: 100%;
+                width: 250px;
+                top: 0;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                z-index: 90;
+                max-height: 0;
+                overflow: hidden;
+                transition: all 0.5s ease-out backwards;
+
+                .pamenu-item {
+                    width: 100%;
+                    position: relative;
+                    padding: 20px 0px 20px 30px;
+                    text-align: start;
+
+                    a {
+                        color: black;
+                        display: block;
+                        font-weight: 600;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+
+                    .pamenu-link {
+                        color: black;
+                        display: block;
+                        font-weight: 600;
+                        text-decoration: none;
+                        text-transform: uppercase;
+
+                        .arrowSub,
+                        .arrowSub2 {
+                            content: '';
+                            display: inline-block;
+                            position: relative;
+                            width: 24px;
+                            top: 6px;
+                            left: 10px;
+                            height: 24px;
+                            background: url("/src/img/arrow-right.svg") no-repeat;
+                            font-size: 1em;
+                            // transform: rotate(90deg);
+                            cursor: pointer;
+                            transition: all 1s;
+                        }
+                    }
+                }
+            }
+
+            .submenu,
+            .submenu2 {
+                width: 100%;
+                max-height: 5px;
+                visibility: hidden;
+
+                .submenu-item {
+                    text-align: start;
+                    flex-direction: row;
+                    padding: 30px 0 0 20px;
+                    justify-content: center;
+
+                    .submenu-link {
+                        color: black;
+                        width: 100%;
+                        font-size: 14px;
+                        font-weight: 600;
+                        display: inline;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .navbar {
+            height: 0;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            column-gap: 40px;
+            overflow: hidden;
+            transition: all 1s ease-in-out;
+
+            .pamenu {
+                margin-top: 50px;
+                padding: 0;
+                list-style: none;
+                height: 100%;
+                width: 250px;
+                top: 0;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                z-index: 90;
+                max-height: 0;
+                overflow: hidden;
+                transition: all 0.5s ease-out backwards;
+
+                .pamenu-item {
+                    width: 100%;
+                    position: relative;
+                    padding: 30px 0px 20px 60px;
+                    text-align: start;
+
+                    a {
+                        color: black;
+                        width: 100%;
+                        font-size: 18px;
+                        font-weight: 600;
+                        display: inline;
+                        text-transform: uppercase;
+                    }
+
+                    .pamenu-link {
+                        color: black;
+                        display: block;
+                        font-weight: 600;
+                        font-size: 18px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+
+                        .arrowSub,
+                        .arrowSub2 {
+                            content: '';
+                            display: inline-block;
+                            position: relative;
+                            width: 24px;
+                            top: 6px;
+                            left: 10px;
+                            height: 24px;
+                            background: url("/src/img/arrow-right.svg") no-repeat;
+                            font-size: 1em;
+                            // transform: rotate(90deg);
+                            cursor: pointer;
+                            transition: all 1s;
+                        }
+                    }
+                }
+            }
+
+            .submenu,
+            .submenu2 {
+                width: 100%;
+                max-height: 5px;
+                visibility: hidden;
+
+                .submenu-item {
+                    text-align: start;
+                    flex-direction: row;
+                    padding: 30px 0 0 20px;
+                    justify-content: center;
+
+                    .submenu-link {
+                        color: black;
+                        width: 100%;
+                        font-size: 16px;
+                        font-weight: 600;
+                        display: inline;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar .pamenu.open {
+    overflow: visible;
+    width: 300px;
+    height: 100%;
+}
+
+.navbar .submenu.openChild {
+    visibility: visible;
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    transition: all 1s ease-out backwards;
+
+}
+
+.navbar .submenu2.openChild2 {
+    visibility: visible;
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    transition: all 1s ease-out backwards;
+}
+
+.arrowSub.run {
+    transform: rotate(90deg);
+    transition: all 0.6s;
+}
+
+.arrowSub2.run2 {
+    transform: rotate(90deg);
+    transition: all 0.6s;
+}
+
+.navbar-nav.containerShow {
+    overflow: visible;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.navbar.insideContainerShow {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
