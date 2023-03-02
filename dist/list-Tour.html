@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Du lịch và lối sống</title>
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet"> -->
+<link href="/css/index.min.css" rel="stylesheet"></head>
+
+<body class="w-screen h-screen overflow-x-hidden">
+  <header>
+    <div class="w-full fixed z-50 top-0 shadow-1-xl bg-white   h-[95px] lg:h-[78px]  mx-auto">
+      <div
+        class=" pb-[23px] pt-[30px] lg:py-[13px] md:pt-[21px] md:pb-[22px] pl-[27px] md:px-[57px]  pr-6  xl:max-w-7xl mx-auto  top-0  flex justify-between  items-center">
+        <button class="lg:hidden">
+          <i class="twi-22-align-justify-line text-2xl md:text-[28px] text-black buttonOpen"></i>
+        </button>
+        <nav class="navbar-nav">
+          <div class="navbar">
+            <ul class="pamenu">
+              <li class="pamenu-item"><a  href="index.html">Trang chủ</a></li>
+              <li class="pamenu-item">
+                <a class="pamenu-link">Du lịch <span class="arrowSub"></span></a>
+                <ul class="submenu">
+                  <li class="submenu-item"><a  href="list-Tour.html" class="submenu-link">Danh sách tour</a></li>
+                  <li class="submenu-item"><a  href="tour-Detail.html" class="submenu-link">Chi tiết tour</a></li>
+                </ul>
+              </li>
+              <li class="pamenu-item">
+                <a class="pamenu-link">Tin tức <span class="arrowSub2"></span></a>
+                <ul class="submenu2">
+                  <li class="submenu-item"><a  href="news.html" class="submenu-link">Trang tin tức</a></li>
+                  <li class="submenu-item"><a  href="news-Detail.html" class="submenu-link">Chi tiết tin tức</a></li>
+                </ul>
+              </li>
+              <li class="pamenu-item"><a  href="contact.html">Liên hệ</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="h-full">
+          <a class="md:hidden" href="./index.html">
+            <picture class="w-full">
+              <img class=" w-full h-full top-0 left-0 inset-0 flex justify-start" src="/images/logonMini.svg"
+                alt="">
+            </picture>
+          </a>
+          <a class="hidden md:flex" href="./index.html">
+            <picture class="w-full">
+              <img class=" w-full h-full top-0 left-0 inset-0 flex justify-start" src="/images/logo.svg"
+                alt="">
+            </picture>
+          </a>
+        </div>
+        <div class="hidden lg:flex items-center justify-end flex-auto gap-[85px]">
+          <div class="flex gap-20 items-center">
+            <div class="text-header-1 font-semibold text-neutral-1-900  truncate  group">
+              <div class="flex gap-2 items-center">
+                <a href="list-Tour.html">
+                  Du lịch
+                </a>
+                <div class="rotate-90 group-hover:-rotate-90 truncate h-full">
+                  <i class="twi-22-chevron-line text-sm text-secondary-1"></i>
+                </div>
+              </div>
+              <ul
+                class="hidden rounded-lg  shadow-1-xl absolute -translate-x-1  mb-14 z-60 group-hover:flex hover:flex w-[250px] flex-col bg-white drop-shadow-lg">
+                <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                  <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                    href="tour-Detail.html">Chi tiết tour</a>
+                </li>
+                <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                  <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                    href="tour-Detail.html">Chi tiết tour</a>
+                </li>
+                <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                  <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                    href="tour-Detail.html">Chi tiết tour</a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-header-1 font-semibold text-neutral-1-900 truncate"><a href="news.html">
+                Tin tức
+              </a></div>
+            <div class="text-header-1 font-semibold text-neutral-1-900 truncate">
+              <a href="contact.html">
+                Liên hệ
+              </a>
+            </div>
+          </div>
+          <div class="flex gap-8">
+            <button class="px-4 md:px-6 bg-primary-2 rounded-[200px]">
+              <i class="twi-22-search-line text-white text-xs md:text-lg"></i>
+            </button>
+            <i class="twi-22-user-line text-neutral-1-900 text-[32px] "></i>
+          </div>
+        </div>
+        <button class="lg:hidden px-4  md:px-6 bg-primary-2 rounded-[200px]">
+          <i class="twi-22-search-line text-white text-xs md:text-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- section1 -->
+    <section>
+      <div class="pt-[95px] lg:pt-[78px]">
+        <div class="relative w-full bg-introTour bg-cover bg-center rounded-b-xl ">
+          <div class="max-h-[552px] md:max-h-[575px] lg:max-h-[823px] rounded-b-xl h-screen ">
+            <div
+              class=" px-[24px] md:px-[57px]  z-10 xl:max-w-7xl mx-auto w-full  pt-[188px] md:pt-[130px] lg:pt-[232px]">
+              <div class=" pb-[86px] md:pb-[37px] lg:pb-[100px]">
+                <div
+                  class="text-neutral-1-900 font-VampiroOne text-[24px] md:text-[32px] leading-10 md:leading-[60px] lg:leading-[100px] lg:text-[50px] uppercase text-center">
+                  discove the <br> journey</div>
+              </div>
+              <div class="flex flex-col">
+                <div class="md:w-11/12 lg:w-3/4 z-[2]">
+                  <div class="pr-[24px] md:pr-[7px] md:pl-[24px] lg:pr-[21px] md:pt-[20px] md:pb-[16px] lg:py-[23px]  pl-[23px] pt-[19px] pb-[18px] h-full bg-white rounded-[20px] md:rounded-md z-10">
+                    <div class="grid grid-cols-2 justify-between xl:gap-20    gap-y-6   md:grid md:grid-cols-4 ">
+                      <div class="flex flex-col gap-3">
+                        <div class="flex gap-2 items-center group">
+                          <div
+                            class="text-title-2 gap-2 font-semibold text-neutral-1-900 flex font-sans items-center truncate">
+                            Chọn điểm đi
+                            <div class="rotate-90  truncate">
+                              <i class="twi-22-chevron-line text-sm text-secondary-1"></i>
+                            </div>
+                          </div>
+                          <ul
+                            class="hidden rounded-lg  absolute -translate-x-1/2  mt-36 z-60 group-hover:flex hover:flex w-[250px] flex-col bg-white drop-shadow-lg">
+                            <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                              <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                                href="#">Chọn điểm đi</a>
+                            </li>
+                            <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                              <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                                href="#">Chọn điểm đi</a>
+                            </li>
+                            <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                              <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                                href="#">Chọn điểm đi</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="text-caption-2 font-normal text-neutral-1-600 font-sans">TP. Hồ Chí
+                          Minh</div>
+                      </div>
+                      <div class="flex flex-col gap-3">
+                        <div class="flex gap-2 items-center group">
+                          <div
+                            class="text-title-2 gap-2 font-semibold text-neutral-1-900 flex items-center font-sans truncate">
+                            Chọn điểm đến
+                            <div class="rotate-90  truncate">
+                              <i class="twi-22-chevron-line text-sm text-secondary-1"></i>
+                            </div>
+                          </div>
+                          <ul
+                            class="hidden rounded-lg  absolute -translate-x-1/2  mt-36 z-60 group-hover:flex hover:flex w-[250px] flex-col bg-white drop-shadow-lg">
+                            <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                              <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                                href="#">Chọn điểm đến</a>
+                            </li>
+                            <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                              <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                                href="#">Chọn điểm đến</a>
+                            </li>
+                            <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                              <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                                href="#">Chọn điểm đến</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="text-caption-2 font-normal text-neutral-1-600 truncate font-sans">Địa điểm bạn
+                          muốn đến?</div>
+                      </div>
+                      <div class="flex flex-col truncate gap-3">
+                        <div class="flex gap-2 items-center group">
+                          <div
+                            class="text-title-2 gap-2 font-semibold text-neutral-1-900 font-sans flex items-center truncate">
+                            Chọn ngày
+                            <div class="rotate-90  truncate">
+                              <i class="twi-22-chevron-line text-sm text-secondary-1"></i>
+                            </div>
+                          </div>
+                          <ul
+                            class="hidden rounded-lg  absolute -translate-x-1/2  mt-36 z-60 group-hover:flex hover:flex w-[250px] flex-col bg-white drop-shadow-lg">
+                            <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                              <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                                href="#">Chọn ngày</a>
+                            </li>
+                            <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                              <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                                href="#">Chọn ngày</a>
+                            </li>
+                            <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                              <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                                href="#">Chọn ngày</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="text-caption-2 font-normal text-neutral-1-600 font-sans truncate">Khi nào bạn
+                          khởi hành?
+                        </div>
+                      </div>
+                      <button
+                        class="px-6 pt-[17px] pb-[16px] max-w-[148px] md:py-4 bg-primary-2 rounded-[200px] text-caption-2  md:text-body-2 text-white font-normal font-sans  truncate">
+                        Khám phá ngay
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="-mt-[68px] md:-mt-7 lg:-mt-[25px] relative  z-[1]">
+                  <div
+                    class=" flex flex-col gap-4 md:gap-6 lg:gap-8  pt-[100px] md:pt-11 lg:pt-[54px] pb-6 lg:pb-[43px]  px-6 xl:px-[85px]">
+                    <div class="text-header-2 text-[#011D0E] font-semibold">Ưu đãi Tour giờ chót</div>
+                    <div
+                      class=" grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2  gap-6 md:gap-x-[132px] lg:gap-x-[102px]  items-end justify-between w-full ">
+                      <div class="flex flex-col gap-9 md:gap-6 truncate">
+                        <div class="flex gap-[18px] items-start">
+                          <div class="font-normal text-[#011D0E] text-xl">Hà Nội</div>
+                          <picture>
+                            <img src="/images/LogoVN.svg" alt="">
+                          </picture>
+                        </div>
+                        <div class="w-full">
+                          <div class="relative w-full pt-[47.40%]">
+                            <img class="absolute h-full w-full top-0 left-0" src="/images/section1-halong.png" alt="">
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="flex gap-12 md:gap-8  md:flex-nowrap px-0.5">
+                          <div class="flex items-center rounded-[99px] ">
+                            <a href="tour-Detail.html">
+                              <button
+                                class="flex items-center justify-center rounded-[99px]  bg-[#002466] border-[3px] border-white border-solid shadow-1-xl-button">
+                                <span class="px-6 py-2 text-body-2  text-white font-semibold"> Xem thêm</span>
+                              </button>
+                            </a>
+                          </div>
+                          <div class="flex flex-col gap-2 truncate">
+                            <div class="text-body-2 font-normal text-[#011D0E] truncate">Thành phố Hạ Long</div>
+                            <div class="text-title-2 font-semibold text-[#011D0E] truncate">10,500,000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col gap-9 md:gap-6 ">
+                        <div class="flex gap-[18px] items-start">
+                          <div class="font-normal text-[#011D0E] text-xl">USA</div>
+                          <picture>
+                            <img src="/images/LogoUSA.svg" alt="">
+                          </picture>
+                        </div>
+                        <div class="w-full">
+                          <div class="relative w-full pt-[47.40%]">
+                            <img class="absolute h-full w-full top-0 left-0" src="/images/section1-SanFrancisco.png"
+                              alt="">
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="flex items-center gap-12 md:gap-8  md:flex-nowrap px-0.5">
+                          <div class="flex items-center rounded-[99px] ">
+                            <a href="tour-Detail.html">
+                              <button
+                                class="flex items-center justify-center rounded-[99px]  bg-[#002466] border-[3px] border-white border-solid shadow-1-xl-button">
+                                <span class="px-6 py-2 text-body-2  text-white font-semibold truncate"> Xem
+                                  thêm</span>
+                              </button>
+                            </a>
+                          </div>
+                          <div class="flex flex-col gap-2 truncate">
+                            <div class="text-body-2 font-normal text-[#011D0E] truncate">San Francisco</div>
+                            <div class="text-title-2 font-semibold text-[#011D0E] truncate">40,500,000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-col gap-9 md:gap-6 truncate">
+                        <div class="flex gap-[18px] items-start">
+                          <div class="font-normal text-[#011D0E] text-xl">Hà Nội</div>
+                          <picture>
+                            <img src="/images/LogoVN.svg" alt="">
+                          </picture>
+                        </div>
+                        <div class="w-full">
+                          <div class="relative w-full pt-[47.40%]">
+                            <img class="absolute h-full w-full top-0 left-0" src="/images/section1-halong2.png" alt="">
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="flex items-center gap-12 md:gap-8  md:flex-nowrap px-0.5">
+                          <div class="flex items-center rounded-[99px] ">
+                            <a href="tour-Detail.html">
+                              <button
+                                class="flex items-center justify-center rounded-[99px]  bg-[#002466] border-[3px] border-white border-solid shadow-1-xl-button">
+                                <span class="px-6 py-2 text-body-2  text-white font-semibold truncate"> Xem
+                                  thêm</span>
+                              </button>
+                            </a>
+                          </div>
+                          <div class="flex flex-col gap-2 truncate">
+                            <div class="text-body-2 font-normal text-[#011D0E] truncate">Thành phố Hạ Long</div>
+                            <div class="text-title-2 font-semibold text-[#011D0E] truncate">10,500,000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full h-full bg-title backdrop-blur-[20px] rounded-[20px] shadow-3xl absolute inset-0 -z-[1]">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- section2 -->
+    <section class="flex flex-col gap-[38px] pt-[1037px] md:pt-[410px] lg:pt-[260px] px-[24px] lg:px-6 md:px-[57px] xl:max-w-7xl mx-auto">
+      <div class="lg:flex gap-2 items-center hidden">
+        <div class="text-neutral-1-600 font-normal font-sans text-xl leading-7">Du lịch</div>
+      <div class="flex items-center">
+        <span><i class="twi-22-chevron-line -rotate-90 text-secondary-1"></i></span>
+      </div>
+        <div class="text-neutral-1-900 font-normal font-sans text-xl leading-7">Du lịch trong nước</div>
+      </div>
+      <div class="flex gap-6">
+        <div class="hidden lg:flex flex-col w-1/3 gap-4">
+          <div class="text-heading-3 font-semibold font-sans text-[28px] leading-9">Lọc kết quả</div>
+          <div class="flex flex-col">
+            <div class="flex flex-col gap-4 w-full mb-[26px]">
+              <select class="px-6 py-3 border border-primary-2 w-full  rounded outline-0">
+                <option class="flex items-center justify-between gap-[67px] text-body-1 font-normal text-neutral-1-900"
+                  selected> Du lịch</option>
+              </select>
+              <div class="flex justify-center items-start gap-6">
+                <div class="flex h-10">
+                  <button class=" border hover:bg-primary-2  w-full  rounded-md cursor-pointer">
+                    <span
+                      class="px-8 py-2 flex items-center hover:text-white  gap-[67px] text-body-1 font-normal text-neutral-1-900  text-center truncate">
+                      Trong nước
+                    </span>
+                  </button>
+                </div>
+                <div class="flex h-10">
+                  <button class=" border hover:bg-primary-2  w-full  rounded-md cursor-pointer">
+                    <span
+                      class="px-8 py-2 flex items-center hover:text-white  gap-[67px] text-body-1 font-normal text-neutral-1-900  text-center truncate">
+                      Nước ngoài
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-1 w-full mb-[26px]">
+              <div class="text-title-1 font-semibold text-neutral-1-900 font-sans">Loại hình Tour</div>
+              <select class="px-6 py-3 border border-primary-2 w-full rounded outline-0">
+                <option disabled selected hidden value=""
+                  class="flex items-center justify-between gap-[67px] text-body-1 font-normal text-neutral-1-900">---
+                  Tất cả ---</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-1 w-full mb-[26px]">
+              <div class="text-title-1 font-semibold text-neutral-1-900 font-sans">Điểm đi</div>
+              <select class="px-6 py-3 border border-primary-2 w-full rounded outline-0">
+                <option class="flex items-center justify-between gap-[67px] text-body-1 font-normal text-neutral-1-900"
+                  selected>TP. Hồ Chí Minh</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-1 w-full mb-[26px]">
+              <div class="text-title-1 font-semibold text-neutral-1-900 font-sans">Điểm đến</div>
+              <select class="px-6 py-3 border border-primary-2 w-full rounded outline-0">
+                <option class="flex items-center justify-between gap-[67px] text-body-1 font-normal text-neutral-1-900"
+                  selected>--- Chọn điểm đến ---</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-[14px] w-full mb-[14px]">
+              <div class="text-title-1 font-semibold text-neutral-1-900 font-sans">Số ngày</div>
+              <div class="flex flex-col gap-4 px-[48px]">
+                <div class="flex justify-center  gap-6 px-[48px]">
+                  <button class=" border hover:bg-primary-2  w-full rounded-md min-w-[160px]">
+                    <span
+                      class=" px-10 py-2 flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900 hover:text-white truncate text-center justify-center">
+                      1-3 ngày
+                    </span>
+                  </button>
+                  <button class=" border hover:bg-primary-2  w-full rounded-md min-w-[160px]">
+                    <span
+                      class=" px-10 py-2 flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900 hover:text-white truncate text-center justify-center">
+                      8-14 ngày
+                    </span>
+                  </button>
+                </div>
+                <div class="flex justify-center  gap-6 px-[48px]">
+                  <button class=" border hover:bg-primary-2  w-full rounded-md min-w-[160px]">
+                    <span
+                      class=" px-10 py-2 flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900 hover:text-white truncate text-center justify-center">
+                      8-14 ngày
+                    </span>
+                  </button>
+                  <button class=" border hover:bg-primary-2  w-full rounded-md min-w-[160px]">
+                    <span
+                      class=" px-10 py-2 flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900 hover:text-white truncate text-center justify-center">
+                      Trên 14 ngày
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[14px] w-full mb-[26px]">
+              <div class="text-title-1 font-semibold text-neutral-1-900 font-sans">Ngày đi</div>
+              <input
+                class="px-6 border py-[3px]  border-primary-2 w-full rounded text-body-1 font-normal text-neutral-1-900 outline-0"
+                type="date">
+            </div>
+            <div class="flex flex-col gap-[14px] w-full mb-[26px]">
+              <div class="text-title-1 font-semibold text-neutral-1-900 font-sans">Số lượng người</div>
+              <div class="flex flex-col gap-4 px-[48px]">
+                <div class="flex justify-center  gap-6 px-[48px]">
+                  <button class="border hover:bg-primary-2  w-full rounded-md min-w-[160px]">
+                    <span
+                      class="px-10 py-2 flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900 hover:text-white truncate text-center justify-center">
+                      1 người
+                    </span>
+                  </button>
+                  <button class=" border  w-full rounded-md hover:bg-primary-2 min-w-[160px]">
+                    <span
+                      class="px-10 py-2 flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900  hover:text-white truncate text-center justify-center ">
+                      2 người
+                    </span>
+                  </button>
+                </div>
+                <div class="flex justify-center  gap-6 px-[48px]">
+                  <button class=" border  w-full rounded-md hover:bg-primary-2 min-w-[160px]">
+                    <span
+                      class="px-10 py-2  flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900  hover:text-white truncate text-center justify-center ">
+                      3-5 người
+                    </span>
+                  </button>
+                  <button class="border  w-full rounded-md hover:bg-primary-2 min-w-[160px]">
+                    <span
+                      class="px-10 py-2  flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900  hover:text-white truncate text-center justify-center ">
+                      5+ người
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[14px] w-full mb-[37px]">
+              <div class="text-title-1 font-semibold text-neutral-1-900 font-sans">Dòng Tour</div>
+              <div class="flex flex-col gap-4 px-[48px]">
+                <div class="flex justify-center  gap-6 px-[48px]">
+                  <button class=" border hover:bg-primary-2  w-full rounded-md min-w-[160px]">
+                    <span
+                      class=" px-10 py-2 flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900 hover:text-white truncate text-center justify-center">
+                      1 người
+                    </span>
+                  </button>
+                  <button class=" border  w-full rounded-md hover:bg-primary-2 min-w-[160px]">
+                    <span
+                      class=" px-10 py-2 flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900  hover:text-white truncate text-center justify-center ">
+                      2 người
+                    </span>
+                  </button>
+                </div>
+                <div class="flex justify-center  gap-6 px-[48px]">
+                  <button class=" border  w-full rounded-md hover:bg-primary-2 min-w-[160px]">
+                    <span
+                      class="px-10 py-2 flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900  hover:text-white truncate text-center justify-center ">
+                      3-5 người
+                    </span>
+                  </button>
+                  <button class="border  w-full rounded-md hover:bg-primary-2 min-w-[160px]">
+                    <span
+                      class="px-10 py-2 flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900  hover:text-white truncate text-center justify-center ">
+                      5+ người
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[57px] w-full mb-[42px]">
+              <div class="flex gap-2 items-center pt-[21px] pb-[19px]">
+                <div class="text-heading-4 font-semibold text-neutral-1-500 font-sans min-w-[180px]">Bộ lọc tìm kiếm
+                </div>
+                <hr class="w-full bg-neutral-1-500 h-0.5">
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="relative">
+                  <div class="h-0.5 bg-neutral-1-500 w-full z-0"></div>
+                  <div class="absolute h-0.5 w-2/3 bg-primary-2 top-0 right-0 flex items-center justify-between">
+                    <div class="h-2 bg-primary-2 w-0.5 "></div>
+                    <div class="h-2 bg-primary-2 w-0.5"></div>
+                  </div>
+                </div>
+                <div class="flex justify-between">
+                  <div class="text-body-2 text-black font-normal">Từ 600.000đ - 50.000.000đ</div>
+                  <div class="text-body-2 text-primary-2 font-normal">Filter</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[14px] w-full mb-[26px]">
+              <div class="text-title-1 font-semibold text-neutral-1-900 font-sans">Thông tin vận chuyển</div>
+              <div class="flex flex-col gap-4 px-[48px]">
+                <div class="flex justify-center  gap-6 px-[48px]">
+                  <button class=" border hover:bg-primary-2  w-full rounded-md min-w-[160px]">
+                    <span
+                      class=" px-10 py-2 flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900 hover:text-white truncate text-center justify-center">
+                      Máy bay
+                    </span>
+                  </button>
+                  <button class=" border  w-full rounded-md hover:bg-primary-2 min-w-[160px]">
+                    <span
+                      class=" px-10 py-2 flex items-center  gap-[67px] text-body-1 font-normal text-neutral-1-900  hover:text-white truncate text-center justify-center ">
+                      Ô tô
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-full justify-between items-center mb-[36px]">
+              <div class="text-title-1 font-semibold text-neutral-1-900 font-sans">Khuyến mãi</div>
+              <label for="switch"></label>
+            </div>
+            <div class="flex w-full justify-between items-center">
+              <div class="text-title-1 font-semibold text-neutral-1-900 font-sans">Còn chỗ</div>
+              <label for="switch"></label>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[23px] md:gap-6 lg:gap-8 lg:w-2/3 items-center">
+          <div class="flex flex-col gap-6">
+            <div class="flex  flex-col gap-8">
+              <div class="flex  flex-col gap-8 items-end">
+                <div class="flex  flex-col gap-[21px] lg:gap-[52px]">
+                  <div class="flex flex-col gap-2">
+                    <div class="text-heading-4 font-semibold text-neutral-1-900 font-sans">Du lịch trong nước</div>
+                    <hr class="border border-neutral-2-200">
+                  </div>
+                  <div class="text-body-2 font-normal font-sans text-neutral-1-700">Du lịch trong nước luôn là lựa chọn
+                    tuyệt vời. Đường bờ biển dài hơn 3260km, những khu bảo
+                    tồn thiên nhiên tuyệt vời, những thành phố nhộn nhịp, những di tích lịch sử hào hùng, nền văn hóa
+                    độc
+                    đáo và hấp dẫn, cùng một danh sách dài những món ăn ngon nhất thế giới, Việt Nam có tất cả những
+                    điều
+                    đó. Với lịch trình dày, khởi hành đúng thời gian cam kết, Vietravel là công ty lữ hành uy tín nhất
+                    hiện
+                    nay tại Việt Nam, luôn sẵn sàng phục vụ du khách mọi lúc, mọi nơi, đảm bảo tính chuyên nghiệp và
+                    chất
+                    lượng dịch vụ tốt nhất thị trường</div>
+                </div>
+                <button
+                  class="lg:hidden border px-6 py-2 border-primary-2 text-primary-2 font-sans font-normal text-body-1 rounded-md">
+                  <span class="flex items-center gap-2"><i class="twi-22-filter-line text-[26px]"></i> Lọc kết
+                    quả</span>
+                </button>
+              </div>
+              <div class="flex justify-between px-4 py-2.5 bg-neutral-3-100">
+                <div class="flex flex-col gap-1 md:flex-row md:items-center md:gap-3 group">
+                  <div class="text-header-2 font-semibold font-sans text-neutral-1-500">Sắp xếp theo:</div>
+                  <button class="p-2.5 bg-white">
+                    <span class="flex items-center gap-[67px] text-body-1 font-normal text-neutral-1-900">
+                      Được đề xuất
+                      <i class="twi-22-chevron-line rotate-90 text-neutral-1-500"></i>
+                    </span>
+                  </button>
+                  <ul
+                  class="hidden  shadow-1-xl absolute mt-44 translate-x-28 group-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg z-10">
+                  <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                    <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                      href="tour-Detail.html">Xem thêm</a>
+                  </li>
+                  <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                    <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                      href="tour-Detail.html">Xem thêm</a>
+                  </li>
+                  <li class="text-header-2 font-sans font-normal text-neutral-1-900">
+                    <a class="rounded-lg hover:bg-neutral-3-50 py-2  px-4 block whitespace-no-wrap"
+                      href="tour-Detail.html">Xem thêm</a>
+                  </li>
+                </ul>
+                </div>
+                <!-- <div class="text-[24px] text-neutral-1-900">
+                <i class="">Nút</i>
+              </div> -->
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-1 gap-[23px] md:gap-x-6 md:gap-y-8 md:grid-cols-2 items-start w-full justify-between">
+              <div class="flex flex-col gap-8 order-1">
+                <a href="tour-Detail.html">
+                  <div class="flex flex-col gap-[23px] shadow-1-xl rounded-[20px] md:order-2">
+                    <div class="relative flex">
+                      <div class="flex relative pt-[48%] md:pt-[44%] lg:pt-[56.24%] w-full">
+                        <picture class="w-full">
+                          <img class="rounded-t-[20px] w-full absolute h-full  top-0 left-0 object-cover"
+                            src="/images/pay-HaLong3.png" alt="">
+                        </picture>
+                      </div>
+                      <div class="absolute px-6 flex pt-4 w-full justify-between">
+                        <div class="font-normal text-title-2 text-white">Thành phố Hạ Long</div>
+                        <div class="flex gap-4 items-center">
+                          <button class="relative">
+                            <div
+                              class="absolute flex w-[28px] h-[28px] bg-white opacity-40 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <i class="twi-22-heart-line text-[15px] text-white"> </i>
+                          </button>
+                          <button class="relative">
+                            <div
+                              class="absolute flex w-[28px] h-[28px] bg-white opacity-40 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <i class="twi-22-external-link-line text-[15px] text-white"> </i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex justify-between items-center pl-6 pr-[27px] pb-[21px]">
+                      <div class="flex flex-col gap-4 w-4/5">
+                        <div class="flex gap-2 items-center truncate">
+                          <del class="text-neutral-1-500 font-normal text-title-1">11,500,000đ</del>
+                          <div class="text-secondary-1 font-semibold text-header-1 truncate">10,500,000đ</div>
+                        </div>
+                        <div class="text-caption-1 font-semibold text-neutral-1-900 truncate">Mã tour:
+                          SGN185-005-180822VN-V
+                        </div>
+                        <div class="text-caption-1 font-semibold text-neutral-1-600 truncate">Thời gian : 3 ngày 2 đêm
+                        </div>
+                      </div>
+                      <picture class="w-1/5">
+                        <img src="/images/logo55px.svg" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                </a>
+                <a href="tour-Detail.html">
+                  <div class="flex flex-col gap-[23px] shadow-1-xl rounded-[20px]">
+                    <div class="relative flex">
+                      <div class="flex relative pt-[48%] md:pt-[44%] lg:pt-[56.24%] w-full">
+                        <picture class="w-full">
+                          <img class="rounded-t-[20px] w-full absolute h-full  top-0 left-0 object-cover"
+                            src="/images/pay-HaLong4.png" alt="">
+                        </picture>
+                      </div>
+                      <div class="absolute px-6 flex pt-4 w-full justify-between">
+                        <div class="font-normal text-title-2 text-white">Thành phố Hạ Long</div>
+                        <div class="flex gap-4 items-center">
+                          <button class="relative">
+                            <div
+                              class="absolute flex w-[28px] h-[28px] bg-white opacity-40 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <i class="twi-22-heart-line text-[15px] text-white"> </i>
+                          </button>
+                          <button class="relative">
+                            <div
+                              class="absolute flex w-[28px] h-[28px] bg-white opacity-40 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <i class="twi-22-external-link-line text-[15px] text-white"> </i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex justify-between items-center pl-6 pr-[27px] pb-[21px]">
+                      <div class="flex flex-col gap-4 w-4/5">
+                        <div class="flex gap-2 items-center truncate">
+                          <del class="text-neutral-1-500 font-normal text-title-1">11,500,000đ</del>
+                          <div class="text-secondary-1 font-semibold text-header-1 truncate">10,500,000đ</div>
+                        </div>
+                        <div class="text-caption-1 font-semibold text-neutral-1-900 truncate">Mã tour:
+                          SGN185-005-180822VN-V
+                        </div>
+                        <div class="text-caption-1 font-semibold text-neutral-1-600 truncate">Thời gian : 3 ngày 2 đêm
+                        </div>
+                      </div>
+                      <picture class="w-1/5">
+                        <img src="/images/logo55px.svg" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                </a>
+                <a href="tour-Detail.html">
+                  <div class="flex flex-col gap-[23px] shadow-1-xl rounded-[20px] md:order-1">
+                    <div class="relative flex">
+                      <div class="flex relative pt-[48%] md:pt-[44%] lg:pt-[56.24%] w-full">
+                        <picture class="w-full">
+                          <img class="rounded-t-[20px] w-full absolute h-full  top-0 left-0 object-cover"
+                            src="/images/pay-HaLong4.png" alt="">
+                        </picture>
+                      </div>
+                      <div class="absolute px-6 flex pt-4 w-full justify-between">
+                        <div class="font-normal text-title-2 text-white">Thành phố Hạ Long</div>
+                        <div class="flex gap-4 items-center">
+                          <button class="relative">
+                            <div
+                              class="absolute flex w-[28px] h-[28px] bg-white opacity-40 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <i class="twi-22-heart-line text-[15px] text-white"> </i>
+                          </button>
+                          <button class="relative">
+                            <div
+                              class="absolute flex w-[28px] h-[28px] bg-white opacity-40 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <i class="twi-22-external-link-line text-[15px] text-white"> </i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex justify-between items-center pl-6 pr-[27px] pb-[21px]">
+                      <div class="flex flex-col gap-4 w-4/5">
+                        <div class="flex gap-2 items-center truncate">
+                          <del class="text-neutral-1-500 font-normal text-title-1">11,500,000đ</del>
+                          <div class="text-secondary-1 font-semibold text-header-1 truncate">10,500,000đ</div>
+                        </div>
+                        <div class="text-caption-1 font-semibold text-neutral-1-900 truncate">Mã tour:
+                          SGN185-005-180822VN-V
+                        </div>
+                        <div class="text-caption-1 font-semibold text-neutral-1-600 truncate">Thời gian : 3 ngày 2 đêm
+                        </div>
+                      </div>
+                      <picture class="w-1/5">
+                        <img src="/images/logo55px.svg" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="hidden md:flex flex-col gap-8 order-3">
+                <a href="tour-Detail.html">
+                  <div class="flex flex-col gap-[23px] shadow-1-xl rounded-[20px] md:order-2">
+                    <div class="relative flex">
+                      <div class="flex relative pt-[48%] md:pt-[44%] lg:pt-[56.24%] w-full">
+                        <picture class="w-full">
+                          <img class="rounded-t-[20px] w-full absolute h-full  top-0 left-0 object-cover"
+                            src="/images/pay-HaLong3.png" alt="">
+                        </picture>
+                      </div>
+                      <div class="absolute px-6 flex pt-4 w-full justify-between">
+                        <div class="font-normal text-title-2 text-white">Thành phố Hạ Long</div>
+                        <div class="flex gap-4 items-center">
+                          <button class="relative">
+                            <div
+                              class="absolute flex w-[28px] h-[28px] bg-white opacity-40 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <i class="twi-22-heart-line text-[15px] text-white"> </i>
+                          </button>
+                          <button class="relative">
+                            <div
+                              class="absolute flex w-[28px] h-[28px] bg-white opacity-40 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <i class="twi-22-external-link-line text-[15px] text-white"> </i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex justify-between items-center pl-6 pr-[27px] pb-[21px]">
+                      <div class="flex flex-col gap-4 w-4/5">
+                        <div class="flex gap-2 items-center truncate">
+                          <del class="text-neutral-1-500 font-normal text-title-1">11,500,000đ</del>
+                          <div class="text-secondary-1 font-semibold text-header-1 truncate">10,500,000đ</div>
+                        </div>
+                        <div class="text-caption-1 font-semibold text-neutral-1-900 truncate">Mã tour:
+                          SGN185-005-180822VN-V
+                        </div>
+                        <div class="text-caption-1 font-semibold text-neutral-1-600 truncate">Thời gian : 3 ngày 2 đêm
+                        </div>
+                      </div>
+                      <picture class="w-1/5">
+                        <img src="/images/logo55px.svg" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                </a>
+                <a href="tour-Detail.html">
+                  <div class="flex flex-col gap-[23px] shadow-1-xl rounded-[20px]">
+                    <div class="relative flex">
+                      <div class="flex relative pt-[48%] md:pt-[44%] lg:pt-[56.24%] w-full">
+                        <picture class="w-full">
+                          <img class="rounded-t-[20px] w-full absolute h-full  top-0 left-0 object-cover"
+                            src="/images/pay-HaLong4.png" alt="">
+                        </picture>
+                      </div>
+                      <div class="absolute px-6 flex pt-4 w-full justify-between">
+                        <div class="font-normal text-title-2 text-white">Thành phố Hạ Long</div>
+                        <div class="flex gap-4 items-center">
+                          <button class="relative">
+                            <div
+                              class="absolute flex w-[28px] h-[28px] bg-white opacity-40 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <i class="twi-22-heart-line text-[15px] text-white"> </i>
+                          </button>
+                          <button class="relative">
+                            <div
+                              class="absolute flex w-[28px] h-[28px] bg-white opacity-40 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <i class="twi-22-external-link-line text-[15px] text-white"> </i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex justify-between items-center pl-6 pr-[27px] pb-[21px]">
+                      <div class="flex flex-col gap-4 w-4/5">
+                        <div class="flex gap-2 items-center truncate">
+                          <del class="text-neutral-1-500 font-normal text-title-1">11,500,000đ</del>
+                          <div class="text-secondary-1 font-semibold text-header-1 truncate">10,500,000đ</div>
+                        </div>
+                        <div class="text-caption-1 font-semibold text-neutral-1-900 truncate">Mã tour:
+                          SGN185-005-180822VN-V
+                        </div>
+                        <div class="text-caption-1 font-semibold text-neutral-1-600 truncate">Thời gian : 3 ngày 2 đêm
+                        </div>
+                      </div>
+                      <picture class="w-1/5">
+                        <img src="/images/logo55px.svg" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                </a>
+                <a href="tour-Detail.html">
+                  <div class="flex flex-col gap-[23px] shadow-1-xl rounded-[20px] md:order-1">
+                    <div class="relative flex">
+                      <div class="flex relative pt-[48%] md:pt-[44%] lg:pt-[56.24%] w-full">
+                        <picture class="w-full">
+                          <img class="rounded-t-[20px] w-full absolute h-full  top-0 left-0 object-cover"
+                            src="/images/pay-HaLong4.png" alt="">
+                        </picture>
+                      </div>
+                      <div class="absolute px-6 flex pt-4 w-full justify-between">
+                        <div class="font-normal text-title-2 text-white">Thành phố Hạ Long</div>
+                        <div class="flex gap-4 items-center">
+                          <button class="relative">
+                            <div
+                              class="absolute flex w-[28px] h-[28px] bg-white opacity-40 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <i class="twi-22-heart-line text-[15px] text-white"> </i>
+                          </button>
+                          <button class="relative">
+                            <div
+                              class="absolute flex w-[28px] h-[28px] bg-white opacity-40 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            </div>
+                            <i class="twi-22-external-link-line text-[15px] text-white"> </i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex justify-between items-center pl-6 pr-[27px] pb-[21px]">
+                      <div class="flex flex-col gap-4 w-4/5">
+                        <div class="flex gap-2 items-center truncate">
+                          <del class="text-neutral-1-500 font-normal text-title-1">11,500,000đ</del>
+                          <div class="text-secondary-1 font-semibold text-header-1 truncate">10,500,000đ</div>
+                        </div>
+                        <div class="text-caption-1 font-semibold text-neutral-1-900 truncate">Mã tour:
+                          SGN185-005-180822VN-V
+                        </div>
+                        <div class="text-caption-1 font-semibold text-neutral-1-600 truncate">Thời gian : 3 ngày 2 đêm
+                        </div>
+                      </div>
+                      <picture class="w-1/5">
+                        <img src="/images/logo55px.svg" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button class="flex items-center lg:hidden">
+            <a href="tour-Detail.html" class="flex"> <span
+                class="flex items-center justify-center px-8 py-3 text-body-2   font-semibold border-2 border-primary-2 text-neutral-1-900  rounded-[99px]">
+                Xem thêm
+              </span></a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- section3 -->
+    <section class=" pt-[120px] md:pt-[100px] lg:pt-[80px] px-[24px] md:px-4 xl:max-w-7xl mx-auto">
+      <div class="flex flex-col gap-8 lg:gap-[60px] items-start">
+        <div class="flex flex-col gap-4 pr-[1px]">
+          <div class="text-heading-4 font-semibold text-neutral-1-900">Điểm đến yêu thích trong tháng
+          </div>
+          <div class="text-body-2 font-normal text-neutral-1-900">Sự lựa chọn hoàn hảo và được yêu thích nhất dựa trên đánh giá từ du khách.</div>
+        </div>
+        <div
+          class="grid grid-cols-1 gap-6 md:grid-cols-2 md:grid-row-2 lg:grid-cols-12 items-start w-full justify-between md:order-1">
+          <div class="flex flex-col relative lg:col-span-3 bg-section-1 bg-no-repeat bg-cover bg-center rounded-[20px]">
+            <div class="   flex flex-col w-full  inset-0 justify-between">
+              <div class=" flex flex-col items-end pt-6 pr-6 gap-4">
+                <div
+                  class=" relative bg-secondary-1 rounded-md pl-[11px] pr-[9px] py-[6px] font-semibold font-sans text-title-1 text-white">
+                  9.4
+                  <div id="triangle" class="absolute"></div>
+                </div>
+                <div class=" flex flex-col  pl-2 pr-[9px] pt-[5px] pb-[13px] rounded-lg bg-black/20 ">
+                  <div class="flex flex-col gap-1  w-full ">
+                    <div class="text-white text-body-2 font-semibold font-sans text-right">Tuyệt vời</div>
+                    <div
+                      class="text-white  text-body-2 font-normal font-sans py-2 pl-[9px] pr-[8px] bg-black/20 rounded-lg">
+                      358 quan tâm</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-2 items-start justify-end w-full bg-card rounded-b-[20px]  pl-[25px] pb-[20px] pt-[72px] lg:pt-[47px]">
+                <div class="text-title-1 lg:text-header-2 font-semibold font-sans text-white font">Kỳ co eo gió</div>
+                <div class="text-caption-1 font-normal font-sans text-white lg:text-body-2">Quy Nhơn</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col relative  lg:col-span-3 bg-section-1 bg-no-repeat bg-cover bg-center rounded-[20px] md:order-3 lg:order-4">
+            <div class=" flex flex-col w-full  inset-0 justify-between">
+              <div class=" flex flex-col items-end pt-6 pr-6 gap-4">
+                <div
+                  class=" relative bg-secondary-1 rounded-md pl-[11px] pr-[9px] py-[6px] font-semibold font-sans text-title-1 text-white">
+                  9.4
+                  <div id="triangle" class="absolute"></div>
+                </div>
+                <div class="flex flex-col  pl-2 pr-[9px] pt-[5px] pb-[13px] rounded-lg bg-black/20">
+                  <div class="flex flex-col gap-1  w-full ">
+                    <div class="text-white text-body-2 font-semibold font-sans text-right">Tuyệt vời</div>
+                    <div
+                      class="text-white  text-body-2 font-normal font-sans py-2 pl-[9px] pr-[8px] bg-black/20 rounded-lg">
+                      358 quan tâm</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-2 items-start justify-end w-full bg-card rounded-b-[20px]  pl-[25px] pb-[20px] pt-[72px] lg:pt-[47px]">
+                <div class="text-title-1 lg:text-header-2 font-semibold font-sans text-white">Kỳ co eo gió</div>
+                <div class="text-caption-1 font-normal font-sans text-white lg:text-body-2">Quy Nhơn</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col relative  md:row-span-2 min-h-[505px] md:h-full  lg:col-span-4 bg-section-2 bg-no-repeat bg-cover bg-center rounded-[20px] md:order-2">
+            <div class="   flex flex-col w-full  inset-0 justify-between min-h-[505px] md:h-full">
+              <div class=" flex flex-col items-end pt-6 pr-6 gap-4">
+                <div
+                  class=" relative bg-secondary-1 rounded-md pl-[11px] pr-[9px] py-[6px] font-semibold font-sans text-title-1 text-white">
+                  9.4
+                  <div id="triangle" class="absolute"></div>
+                </div>
+                <div class="flex flex-col  pl-2 pr-[9px] pt-[5px] pb-[13px] rounded-lg bg-black/20">
+                  <div class="flex flex-col gap-1  w-full ">
+                    <div class="text-white text-body-2 font-semibold font-sans text-right">Tuyệt vời</div>
+                    <div
+                      class="text-white  text-body-2 font-normal font-sans py-2 pl-[9px] pr-[8px] bg-black/20 rounded-lg">
+                      357 quan tâm</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-2 items-start justify-end w-full bg-card rounded-b-[20px]  pl-[25px] pb-[20px] pt-[72px]">
+                <div class="text-title-1 lg:text-header-1 font-semibold font-sans text-white">Kỳ co eo gió</div>
+                <div class="text-caption-1 font-normal font-sans text-white lg:text-body-2">Quy Nhơn</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col relative  md:col-span-2  lg:col-span-5 bg-section-4 bg-no-repeat bg-cover bg-center rounded-[20px] md:order-4 lg:order-3">
+            <div class="flex flex-col w-full  inset-0 justify-between">
+              <div class=" flex flex-col items-end pt-6 pr-6 gap-4">
+                <div
+                  class=" relative bg-secondary-1 rounded-md pl-[11px] pr-[9px] py-[6px] font-semibold font-sans text-title-1 text-white">
+                  9.4
+                  <div id="triangle" class="absolute"></div>
+                </div>
+                <div class="flex flex-col  pl-2 pr-[9px] pt-[5px] pb-[13px] rounded-lg bg-black/20">
+                  <div class="flex flex-col gap-1  w-full ">
+                    <div class="text-white text-body-2 font-semibold font-sans text-right">Tuyệt vời</div>
+                    <div
+                      class="text-white  text-body-2 font-normal font-sans py-2 pl-[9px] pr-[8px] bg-black/20 rounded-lg">
+                      358 quan tâm</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-2 items-start justify-end w-full bg-card rounded-b-[20px]  pl-[25px] pb-[20px] pt-[72px] lg:pt-[47px]">
+                <div class="text-title-1 md:text-header-1 font-semibold font-sans text-white">Kỳ co eo gió</div>
+                <div class="text-caption-1 font-normal font-sans text-white md:text-body-1">Quy Nhơn</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-6 md:flex-row md:order-5 md:col-span-2 lg:md:col-span-5 w-full">
+            <div
+              class="flex flex-col relative   bg-section-5 bg-no-repeat bg-cover bg-center rounded-[20px] md:w-1/2 lg:w-[45%] ">
+              <div class="flex flex-col w-full h-full inset-0 justify-between">
+                <div class=" flex flex-col items-end pt-6 pr-6 gap-4">
+                  <div
+                    class=" relative bg-secondary-1 rounded-md pl-[11px] pr-[9px] py-[6px] font-semibold font-sans text-title-1 text-white">
+                    9.4
+                    <div id="triangle" class="absolute"></div>
+                  </div>
+                  <div class="flex flex-col  pl-2 pr-[9px] pt-[5px] pb-[13px] rounded-lg bg-black/20">
+                    <div class="flex flex-col gap-1 h-full  w-full ">
+                      <div class="text-white text-body-2 font-semibold font-sans text-right">Tuyệt vời</div>
+                      <div
+                        class="text-white  text-body-2 font-normal font-sans py-2 pl-[9px] pr-[8px] bg-black/20 rounded-lg">
+                        358 quan tâm</div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-2 items-start justify-end w-full bg-card rounded-b-[20px]  pl-[25px] pb-[20px] pt-[72px] lg:pt-[47px]">
+                  <div class="text-title-1 lg:text-header-2 font-semibold font-sans text-white">Kỳ co eo gió</div>
+                  <div class="text-caption-1 font-normal font-sans text-white lg:text-body-2">Quy Nhơn</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col relative  bg-section-3 bg-no-repeat bg-cover bg-center rounded-[20px]  md:w-1/2 lg:w-[55%]">
+              <div class="flex flex-col w-full h-full inset-0 justify-between">
+                <div class=" flex flex-col items-end pt-6 pr-6 gap-4">
+                  <div
+                    class=" relative bg-secondary-1 rounded-md pl-[11px] pr-[9px] py-[6px] font-semibold font-sans text-title-1 text-white">
+                    9.4
+                    <div id="triangle" class="absolute"></div>
+                  </div>
+                  <div class="flex flex-col  pl-2 pr-[9px] pt-[5px] pb-[13px] rounded-lg bg-black/20">
+                    <div class="flex flex-col gap-1   w-full ">
+                      <div class="text-white text-body-2 font-semibold font-sans text-right">Tuyệt vời</div>
+                      <div
+                        class="text-white  text-body-2 font-normal font-sans py-2 pl-[9px] pr-[8px] bg-black/20 rounded-lg">
+                        358 quan tâm</div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-2 items-start justify-end w-full bg-card rounded-b-[20px]  pl-[25px] pb-[20px] pt-[72px] lg:pt-[47px]">
+                  <div class="text-title-1 lg:text-header-2h font-semibold font-sans text-white">Kỳ co eo gió</div>
+                  <div class="text-caption-1 font-normal font-sans text-white lg:text-body-2">Quy Nhơn</div>
+                </div>
+              </div>
+            </div>
+            </hdiv>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="mt-[563px] md:mt-[219px]  lg:mt-[93px]  bg-neutral-1-900 ">
+    <div id="back-top">
+      <a href="#" id="back-top__icon">
+        <span class="arrowSub"></span>
+      </a>
+    </div>
+    <div class="flex flex-col gap-6 md:gap-[13px] lg:gap-[42px] px-[24px] md:px-[57px] xl:max-w-7xl mx-auto">
+      <div
+        class="relative flex flex-col md:flex-row md:flex-wrap  justify-between pt-[26px] gap-y-6 md:gap-y-8 lg:pt-[57px] md:pt-9  ">
+        <div class="flex flex-col gap-4">
+          <picture>
+            <img src="/images/logoFooter.svg" alt="">
+          </picture>
+          <div class="text-title-1 font-semibold font-sans text-white">KB DULICH - CÔNG TY TNHH GIAO THÔNG VẬN TẢI <br>
+            VÀ
+            DU LỊCH SÀI GÒN
+          </div>
+          <div class="text-body-2 font-sans font-normal text-neutral-1-300">Tại TP.Hồ Chí Minh: Số 219 Võ Văn Tần,Phường
+            5,Quận 3</div>
+          <div class="text-body-2 font-sans font-normal text-neutral-1-300">Hotline: 1900 5862</div>
+          <div class="text-body-2 font-sans font-normal text-neutral-1-300">Tại Hà Nội: Tầng 6, tòa nhà Zentower, số 12
+            Khuất Duy Tiến, <br> P.Thanh Xuân Trung, Q.Thanh Xuân, Hà Nội</div>
+          <div class="text-body-2 font-sans font-normal text-neutral-1-300">Hotline: 1900 0871</div>
+        </div>
+        <div class="flex flex-col lg:order-2">
+          <div class="text-title-2 font-semibold text-white mb-4">ĐĂNG KÝ EMAIL ĐỂ NHẬN THÔNG TIN <br> KHUYẾN MÃI</div>
+          <div class="text-caption-1 font-normal text-neutral-1-300 mb-[30px]">Nhập email để có cơ hội giảm 50% cho <br>
+            chuyến
+            đi tiếp theo của Quý khách
+          </div>
+          <div class="relative mb-6 max-w-[279px] md:w-full flex py-[11px] truncate">
+            <input
+              class="bg-transparent truncate border rounded-xl pl-4 pr-12 pt-4 pb-[15px]  border-white text-caption-1 leading-[17px] font-normal text-neutral-1-200 w-full md:w-full outline-0"
+              placeholder="Địa chỉ email của bạn" type="text">
+            <i class="twi-22-send-line text-[28px] text-white absolute top-1/2 right-6 transform -translate-y-1/2"></i>
+          </div>
+          <picture><img src="/images/DangkyBoCongThuong.svg" alt=""></picture>
+        </div>
+        <div class="flex flex-col gap-6 ">
+          <div class="flex flex-col gap-4">
+            <div class="font-sans text-title-1 font-semibold text-white">GÓC KHÁCH KHÀNG</div>
+            <div class="font-sans text-body-2 font-normal text-neutral-1-300"><a href="#">Hình thức đăng ký, giao
+                Voucher</a></div>
+            <div class="font-sans text-body-2 font-normal text-neutral-1-300"><a href="#">Hướng dẫn đặt giữ chỗ Tour</a>
+            </div>
+            <div class="font-sans text-body-2 font-normal text-neutral-1-300"><a href="#">Quy tắc bao hiểm du lịch
+              </a></div>
+            <div class="font-sans text-body-2 font-normal text-neutral-1-300"><a href="#">Điều khoản, điều kiện
+              </a></div>
+            <div class="font-sans text-body-2 font-normal text-neutral-1-300"><a href="#">Câu hỏi thường gặp</a></div>
+            <div class="font-sans text-body-2 font-normal text-neutral-1-300"><a href="#">Liên hệ</a></div>
+          </div>
+          <picture class="hidden md:flex"><img src="/images/dmca-badge-w200-5x1-07 1.svg" alt=""></picture>
+        </div>
+      </div>
+      <div class="flex flex-col gap-[13px] items-center justify-center pb-[18px] lg:pb-[21px]">
+        <div class="flex gap-8  pt-[5px]">
+          <i class="twi-22-facebook-fill text-neutral-1-400 text-[21px]"></i>
+          <i class="twi-22-twitter-fill text-neutral-1-400 text-[21px]"></i>
+          <i class="twi-22-linkedin-fill text-neutral-1-400 text-[21px]"></i>
+          <i class="twi-22-youtube-fill text-neutral-1-400 text-[21px]"></i>
+        </div>
+        <div class="text-body-2 font-normal text-white ">COPYRIGHT © 2022 KBDULICH. All Rights Reserved</div>
+      </div>
+    </div>
+    <div
+      class="fixed bottom-[100px] right-7 md:bottom-[92px] md:right-[30px]  lg:bottom-[38px] lg:right-[10%] xl:right-[120px] z-50 lg:max-w-7xl  w-full">
+      <div class="flex justify-end lg:max-w-7xl">
+        <div class="w-16 h-16 bg-primary-1 opacity-30 rounded-full">
+        </div>
+        <i
+          class="twi-22-mess-fill text-white text-[22px] p-3 bg-primary-1 rounded-full absolute top-1/2  transform -translate-x-2  -translate-y-1/2 "></i>
+      </div>
+    </div>
+  </footer>
+<script defer src="/js/index.js"></script></body>
+
+</html>
